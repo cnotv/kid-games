@@ -65,7 +65,7 @@ ul {
   grid-column-gap: 1px;
   grid-row-gap: 1px;
   
-  font-size: 3vw;
+  font-size: 5vw;
   line-height: 100%;
   text-align: center;
   text-transform: uppercase;
@@ -79,6 +79,7 @@ li {
   transition: font-size .2s;
   display: grid;
   align-items: center;
+  text-shadow: 0.2vh 0.4vw 0.8vw #333;
   &:active {
     font-size: 1.5em;
   }
