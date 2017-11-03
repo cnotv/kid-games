@@ -5,15 +5,12 @@
       <span>kid-games</span>
     </header>
     <section>
-      <h1>Games</h1>
       <ul>
         <li>
-          <router-link to="/alphabet">Kid alphabet keyboard + SpeechSynthesis + Grid CSS + animateCSS</router-link>
-          <a href="https://codepen.io/cnotv/full/WZraMB">codepen</a>
+          <router-link to="/alphabet">ABC</router-link>
         </li>
         <li>
-          <router-link to="/shapes">Sensory rectangles for kids + random square</router-link>
-          <a href="https://codepen.io/cnotv/full/WZraMB">codepen</a>
+          <router-link to="/numbers">123</router-link>
         </li>
       </ul>
       </section>
@@ -31,9 +28,25 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
+<style scoped>
 section {
-  padding: 3rem;
-  line-height: 3;
+  padding: 5vh 10vw;
+}
+ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+a {
+  font-size: 3rem;
+  color: white;
+  line-height: 1;
+  padding: .5em;
+  background: red;
+  border-radius: .5em;
+  display: block;
+}
+li+li{
+  margin-top: 5vh;
 }
 </style>

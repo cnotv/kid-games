@@ -49,10 +49,12 @@ dd {
 
 a {
   color: currentcolor;
+  text-decoration: none;
 }
 
 a:not([href]):not([tabindex]) {
   color: inherit;
+  text-decoration: none;
 }
 
 a:focus,

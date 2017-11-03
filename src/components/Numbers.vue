@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'Shapes',
+  name: 'Numbers',
   data () {
     return {
       finish: 10,
@@ -42,7 +42,7 @@ export default {
       )
       el.innerText = this.current++
 
-      if (el.innerText === this.finish) {
+      if (el.innerText >= this.finish) {
         this.current = 1
       }
     },
@@ -73,7 +73,7 @@ export default {
     display: flex;
     background: red;
     color: white;
-    font-size: 2rem;
+    font-size: 3rem;
     align-items: center;
     justify-content: center;
     font-weight: 700;
@@ -81,5 +81,6 @@ export default {
     user-select: none;
     cursor: pointer;
     border-radius: .5vw;
+    text-shadow: 0.2vh 0.4vw 0.8vw #333;
   }
 </style>
