@@ -1,5 +1,7 @@
 <template>
-  <div v-on:click="activate"></div>
+  <div>
+    <span v-on:click="activate"></span>
+  </div>
 </template>
 
 <script>
@@ -46,28 +48,28 @@ export default {
     },
 
     activate (event) {
-      this.randomize(this.$el)
+      this.randomize(this.$el.children[0])
       window.speechSynthesis.cancel()
-      this.speak(this.$el.innerText)
+      this.speak(this.$el.children[0].innerText)
     }
   },
 
   mounted () {
-    this.randomize(this.$el)
+    this.randomize(this.$el.children[0])
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  html {
+  div {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     width: 100vw;
   }
-  div {
+  span {
     display: flex;
     background: red;
     color: white;
