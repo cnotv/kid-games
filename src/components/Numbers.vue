@@ -34,8 +34,8 @@ export default {
       Object.assign(
         el.style, {
           background: this.hue(),
-          height: this.size(200, 50, 'px'),
-          width: this.size(200, 50, 'px'),
+          height: this.size(300, 100, 'px'),
+          width: this.size(300, 100, 'px'),
           marginTop: this.size(-25, 25, 'vh'),
           marginLeft: this.size(-25, 25, 'vw')
         }
@@ -82,5 +82,6 @@ export default {
     cursor: pointer;
     border-radius: .5vw;
     text-shadow: 0.2vh 0.4vw 0.8vw #333;
+    border: 0.5rem solid white;
   }
 </style>

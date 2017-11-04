@@ -53,6 +53,7 @@ export default {
 
 html, body, ul  {
   overflow: hidden;
+  background-color: white;
 }
 
 ul {
