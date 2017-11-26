@@ -9,6 +9,9 @@
         <li>
           <router-link to="/alphabet">ABC</router-link>
         </li>
+        <!--<li>
+          <router-link to="/alphabet2">ABC 2</router-link>
+        </li>-->
         <li>
           <router-link to="/numbers">123</router-link>
         </li>

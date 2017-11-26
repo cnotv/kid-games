@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/cnotv/kid-games.svg?branch=master)](https://travis-ci.org/cnotv/kid-games)
+[![codecov](https://codecov.io/gh/cnotv/kid-games/branch/master/graph/badge.svg)](https://codecov.io/gh/cnotv/kid-games)
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/cnotv/kid-games.svg)](http://isitmaintained.com/project/cnotv/kid-games "Percentage of issues still open")
+
 # kid-games
 
 > PWA with collection of games for kids, built with vue.js and vue-router
