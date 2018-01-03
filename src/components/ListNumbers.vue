@@ -1,7 +1,7 @@
 <template lang="pug">
   ul
-    each letter in ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-      li('v-on:click'='activate')= letter
+    each number in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+      li('v-on:click'='activate')= number
 
 </template>
 
@@ -19,12 +19,6 @@ export default {
     speak (text) {
       const msg = new SpeechSynthesisUtterance()
       msg.text = text
-
-      // Set the attributes.
-      // msg.volume = 100
-      // msg.rate = 1
-      // msg.pitch = 150
-
       msg.voice = this.voices[5]
       window.speechSynthesis.speak(msg)
     },

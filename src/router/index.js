@@ -1,34 +1,34 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Index from '@/components/Index'
-import Alphabet from '@/components/Alphabet'
-import Alphabet2 from '@/components/Alphabet2'
-import Numbers from '@/components/Numbers'
+import ListAlphabet from '@/components/ListAlphabet'
+import ListNumbers from '@/components/ListNumbers'
+import MorphNumbers from '@/components/MorphNumbers'
 
 Vue.use(Router)
 
 export default new Router({
   mode: 'history',
   routes: [
+    // {
+    //   path: '/',
+    //   name: 'Index',
+    //   component: Index
+    // },
     {
-      path: '/',
-      name: 'Index',
-      component: Index
+      path: '/list-alphabet',
+      name: 'ListAlphabet',
+      component: ListAlphabet
     },
     {
-      path: '/alphabet',
-      name: 'Alphabet',
-      component: Alphabet
+      path: '/list-numbers',
+      name: 'ListNumbers',
+      component: ListNumbers
     },
     {
-      path: '/alphabet2',
-      name: 'Alphabet2',
-      component: Alphabet2
-    },
-    {
-      path: '/Numbers',
-      name: 'Numbers',
-      component: Numbers
+      path: '/morph-numbers',
+      name: 'MorphNumbers',
+      component: MorphNumbers
     },
     {
       path: '*',
