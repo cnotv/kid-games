@@ -1,19 +1,20 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Index from '@/components/Index'
-import Alphabet from '@/components/Alphabet'
-import Numbers from '@/components/Numbers'
+import Index from '@/pages/Index'
+import Alphabet from '@/pages/Alphabet'
+import Numbers from '@/pages/Numbers'
+import Animals from '@/pages/Animals'
 
 Vue.use(Router)
 
 export default new Router({
   mode: 'history',
   routes: [
-    {
-      path: '/',
-      name: 'Index',
-      component: Index
-    },
+    // {
+    //   path: '/',
+    //   name: 'Index',
+    //   component: Index
+    // },
     {
       path: '/alphabet',
       name: 'Alphabet',
@@ -23,6 +24,11 @@ export default new Router({
       path: '/Numbers',
       name: 'Numbers',
       component: Numbers
+    },
+    {
+      path: '/Animals',
+      name: 'Animals',
+      component: Animals
     },
     {
       path: '*',

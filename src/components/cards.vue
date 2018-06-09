@@ -1,14 +1,16 @@
 <template lang="pug">
   ul
-    each letter in ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-      li('v-on:click'='activate')= letter
+    li(v-for="card in cards", 'v-on:click'='activate') {{card}}
 
 </template>
 
 <script>
 
 export default {
-  name: 'Alphabet',
+  name: 'cards',
+  props: [
+    'cards'
+  ],
   data () {
     return {
       animations: ['bounce', 'rubberBand', 'shake', 'swing', 'tada', 'wobble', 'jello'],
@@ -65,7 +67,7 @@ ul {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-column-gap: 1px;
   grid-row-gap: 1px;
-  
+
   font-size: 5vw;
   line-height: 100%;
   text-align: center;

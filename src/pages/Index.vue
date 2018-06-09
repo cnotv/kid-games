@@ -12,6 +12,9 @@
         <li>
           <router-link to="/numbers">123</router-link>
         </li>
+        <li>
+          <router-link to="/animals">Animals</router-link>
+        </li>
       </ul>
       </section>
   </main>
